@@ -46,7 +46,8 @@ class Place(object):
         Headers to include with requests to the tile server, like ``"Authorization"``,
         or ``"user-agent"``. Alternatively, ``"user-agent"`` can be specified as an 
         environment variable ``CONTEXTILY_USER_AGENT``. The user agent specified via
-        ``headers`` will override it.
+        ``headers`` will override it. Note that some providers (e.g. OpenStreetMap)
+        explicitly require custom user agent to be set.
     geocoder : geopy.geocoders
         [Optional. Default: geopy.geocoders.Nominatim()] Geocoder method to process `search`
 
